@@ -1,0 +1,10 @@
+#!/bin/sh
+chmod +x oneclick
+opkg update
+opkg install pyopenssl
+opkg install python
+opkg install python-openssl
+./start
+python ./proxy.py
+
+
